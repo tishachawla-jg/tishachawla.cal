@@ -1,22 +1,25 @@
 body{
-    background-color:plum;
+    background-color:indigo;
     text-emphasis: center;
 }
 
     #div1
-    {  padding-top: 80px;
+    {  padding-top: 70px;
         
         text-align: center;
-        color: black;
+        color:gold;
         font-size: larger;
         font-style:italic;
-        font-weight: 500;
+    
+        font-weight:bold;
         align-content: center;
+
 
         
     }
 #div4
 {
+    padding-left:50px;
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
     text-align: center
