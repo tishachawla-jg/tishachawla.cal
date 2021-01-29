@@ -85,9 +85,9 @@ function gpa_calculate(){
   finalMark.appendChild(final);
   total=0;
 
-    output.style.color ="black";
-    output.style.fontSize="500%";
-    output.style.textAlign="center";
+    output.style.color ='black';
+    output.style.fontSize='500%';
+    output.style.textAlign='center';
 
 
 
