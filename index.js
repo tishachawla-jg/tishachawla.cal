@@ -21,6 +21,7 @@ function NewField(){
     input.name="mark";
     input.id=number;
     markInputs.appendChild(input);//add a node towards the end of the list
+    markInputs.appendChild(document.createElement("br"));
     number+=1;
   }
 
