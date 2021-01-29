@@ -70,11 +70,11 @@ function gpa_calculate(){
       gpa='F,failed!';
       break;
     default:
-      gpa='FAILED!';
+      gpa='N,FAILED!';
       break;
   }
   if (flag==0){
-    gpa='Invalid condition';
+    gpa='NA(Invalid condition)';
   }
   console.log('GRADE:'+gpa);
   var final=document.createElement("P");//creates an element node with the specified name
