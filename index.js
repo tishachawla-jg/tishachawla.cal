@@ -1,6 +1,6 @@
 var markInputs=document.getElementById("texts");//returns the new input fields that will be creating after getting the number of subjects from user
 var finalMark=document.getElementById("Final mark");//returns the fianl grade
-var totalSubs=document.getElementById("Num subjects");//Number of subjects
+var totals=document.getElementById("subjects");//Number of subjects
 var number=0;
 var total=0;
 
@@ -15,7 +15,7 @@ function NewField(){
   //reset number of fields to 0
   nummber=0;
   //create new fields
-  for(var i=0;i<totalSubs.value;i++){
+  for(var i=0;i<totals.value;i++){
     var input = document.createElement("input");
     input.type = "number";
     input.name="mark";
@@ -46,28 +46,28 @@ function gpa_calculate(){
   var gpa;
   switch(parseInt((Average/10))*10){
     case 100:
-      gpa='S';
+      gpa='S(90-100)';
       break;
     case 90:
-      gpa='S';
+      gpa='S(90-100)';
       break;
     case 80:
-      gpa='A';
+      gpa='A(80-90)';
       break;
     case 70:
-      gpa='B';
+      gpa='B(70-80)';
       break;
     case 60:
-      gpa='C';
+      gpa='C(60-70)';
       break;
     case 50:
-      gpa='D';
+      gpa='D(50-60)';
       break;
     case 40:
-      gpa='E';
+      gpa='E,failed!';
       break;
     case 30:
-      gpa='F';
+      gpa='F,failed!';
       break;
     default:
       gpa='FAILED!';
@@ -76,12 +76,19 @@ function gpa_calculate(){
   if (flag==0){
     gpa='Invalid condition';
   }
-  console.log(gpa);
-  var final=document.createElement("P");
-  final.innerText=gpa;
+  console.log('GRADE:'+gpa);
+  var final=document.createElement("P");//creates an element node with the specified name
+
+  final.innerText='Your grade is '+gpa;//returns the same value for a given element
   final.id='output';
+  
   finalMark.appendChild(final);
   total=0;
+
+    output.style.color ="black";
+    output.style.fontSize="500%";
+    output.style.textAlign="center";
+
 
 
 }
