@@ -10,7 +10,7 @@ function NewField(){
   for(var i=0;i<number;i++){
     var input=document.getElementById(i);
     markInputs.removeChild(input);//returns the removed child node from the DOM but keeps it in the memory
-    console.log("")
+    console.log('');
   }
   //reset number of fields to 0
   nummber=0;
