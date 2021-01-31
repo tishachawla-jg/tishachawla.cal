@@ -9,7 +9,7 @@ function NewField(){
   // Delete the old fields
   for(var i=0;i<number;i++){
     var input=document.getElementById(i);
-    markInputs.removeChild("SUBJECT"+i+input);//returns the removed child node from the DOM but keeps it in the memory
+    markInputs.removeChild(input);//returns the removed child node from the DOM but keeps it in the memory
     console.log("")
   }
   //reset number of fields to 0
@@ -20,7 +20,7 @@ function NewField(){
     input.type = "number";
     input.name="mark";
     input.id=number;
-    markInputs.appendChild("Subject"+i+input);//add a node towards the end of the list
+    markInputs.appendChild(input);//add a node towards the end of the list
     markInputs.appendChild(document.createElement("br"));
      markInputs.appendChild(document.createElement("br"));
     number+=1;
