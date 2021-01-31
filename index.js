@@ -16,13 +16,13 @@ function NewField(){
   nummber=0;
   //create new fields
   for(var i=0;i<totals.value;i++){
-    var input = document.createElement("input");
-    input.type = "number";
-    input.name="mark";
+    var input = document.createElement('input');
+    input.type = 'number';
+    input.name='mark';
     input.id=number;
     markInputs.appendChild(input);//add a node towards the end of the list
-    markInputs.appendChild(document.createElement("br"));
-     markInputs.appendChild(document.createElement("br"));
+    markInputs.appendChild(document.createElement('br'));
+    markInputs.appendChild(document.createElement('br'));
     number+=1;
   }
 
@@ -79,7 +79,7 @@ function gpa_calculate(){
     gpa='NA(Invalid condition)';
   }
   console.log('GRADE:'+gpa);
-  var final=document.createElement("P");//creates an element node with the specified name
+  var final=document.createElement('P');//creates an element node with the specified name
 
   final.innerText='Your grade is '+gpa;//returns the same value for a given element
   final.id='output';
